@@ -300,7 +300,7 @@ for folder in folder_names:
             images_list = images_list[:3] # keep it to exactly 3 for fast loading
             
         # Prefilled message
-        wa_message = f"Hello A to Z a CWB Brand Suits, I am inquiring about a style from the digital lookbook.%0A%0A" \
+        wa_message = f"Hello A to Z a Khoobsurat Point, I am inquiring about a style from the digital lookbook.%0A%0A" \
                      f"*Brand:* {display_name}%0A" \
                      f"*Item:* Post %23{post_num}%0A" \
                      f"*Description:* {desc}"
@@ -325,7 +325,7 @@ for folder in folder_names:
         "monogram": monogram,
         "description": brand_desc,
         "categories": categories,
-        "whatsappUrl": info.get("invite_link", f"https://wa.me/918874200694?text=Hello%20A%20to%20Z%20a%20CWB%20Brand%20Suits,%20I%20am%20interested%20in%20joining%20updates%20for%20{display_name.replace(' ', '%20')}."),
+        "whatsappUrl": info.get("invite_link", f"https://wa.me/918874200694?text=Hello%20A%20to%20Z%20a%20Khoobsurat%20Point,%20I%20am%20interested%20in%20joining%20updates%20for%20{display_name.replace(' ', '%20')}."),
         "previews": previews,
         "posts": posts
     })
