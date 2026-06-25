@@ -1,0 +1,651 @@
+/* ----------------------------------------------------
+   A to Z @ Khoobsurat Point - Brand Detail View Styles
+------------------------------------------------------- */
+
+/* --- Navigation & Header Enhancements --- */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-primary);
+  transition: var(--transition-fast);
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-secondary);
+}
+
+.back-link:hover {
+  background-color: var(--accent-gold-light);
+  color: var(--accent-gold-dark);
+}
+
+.back-link i {
+  transition: var(--transition-fast);
+}
+
+.back-link:hover i {
+  transform: translateX(-4px);
+}
+
+/* Scrollable Brand Navigation List in Header (Desktop) */
+.brand-page-title-scroll {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+  width: max-content;
+  max-width: 950px;
+  padding: 0 40px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  margin: 0 auto;
+  
+  /* Premium fade mask for horizontal scroll indicators */
+  mask-image: linear-gradient(to right, transparent, #000 40px, #000 calc(100% - 40px), transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 40px, #000 calc(100% - 40px), transparent);
+}
+
+.brand-page-title-scroll::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.brand-nav-item {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-primary);
+  opacity: 0.35;
+  transition: var(--transition-fast);
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.brand-nav-item:hover {
+  opacity: 0.8;
+}
+
+.brand-nav-item.active {
+  opacity: 1;
+  color: var(--accent-gold-dark);
+  font-weight: 700;
+  border-bottom-color: var(--accent-gold);
+}
+
+/* Mobile Brand Selector Wrapper */
+.brand-mobile-select-wrapper {
+  display: none;
+  position: relative;
+  z-index: 1020;
+}
+
+.brand-mobile-select-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.brand-mobile-select-btn:hover {
+  background-color: var(--accent-gold-light);
+  border-color: var(--accent-gold);
+}
+
+.select-chevron {
+  font-size: 0.75rem;
+  color: var(--accent-gold-dark);
+  transition: var(--transition-fast);
+}
+
+.brand-mobile-select-wrapper.active .select-chevron {
+  transform: rotate(180deg);
+}
+
+/* Mobile Brand Dropdown Menu */
+.brand-mobile-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px);
+  width: 210px;
+  background-color: rgba(252, 250, 247, 0.98);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-medium);
+  padding: 8px 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  z-index: 1025;
+}
+
+.brand-mobile-select-wrapper.active .brand-mobile-dropdown {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+.brand-mobile-dropdown-item {
+  display: block;
+  padding: 10px 20px;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+  border-bottom: 1px solid var(--border-light);
+  transition: var(--transition-fast);
+}
+
+.brand-mobile-dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.brand-mobile-dropdown-item:hover {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.brand-mobile-dropdown-item.active {
+  color: var(--accent-gold-dark);
+  font-weight: 700;
+  background-color: var(--accent-gold-light);
+}
+
+/* Responsive Visibility Breakpoints */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .brand-page-title-scroll {
+    max-width: 750px;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 991px) {
+  .brand-page-title-scroll {
+    max-width: 500px;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brand-page-title-scroll {
+    display: none;
+  }
+  .brand-mobile-select-wrapper {
+    display: block;
+  }
+}
+
+/* --- Brand Profile Header --- */
+.brand-intro-section {
+  padding-top: calc(var(--header-height) + 60px);
+  padding-bottom: 40px;
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.brand-profile-wrap {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.brand-profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.brand-profile-header-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.brand-profile-header-right {
+  flex-shrink: 0;
+}
+
+.whatsapp-join-btn {
+  padding: 14px 28px;
+  border-color: #25d366;
+  color: #25d366;
+  background: rgba(37, 211, 102, 0.03);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.whatsapp-join-btn:hover {
+  background-color: #25d366;
+  color: white;
+  border-color: #25d366;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.2);
+}
+
+.brand-large-monogram {
+  width: 90px;
+  height: 90px;
+  background-color: var(--bg-secondary);
+  border: 1.5px solid var(--accent-gold);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--accent-gold-dark);
+  box-shadow: var(--shadow-soft);
+  flex-shrink: 0;
+}
+
+.brand-meta-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-main-name {
+  font-size: 2.8rem;
+  color: var(--text-primary);
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+.brand-profile-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.brand-profile-tags .brand-tag {
+  font-size: 0.75rem;
+  padding: 4px 12px;
+}
+
+.brand-profile-desc {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  border-left: 2px solid var(--accent-gold);
+  padding-left: 24px;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .brand-intro-section {
+    padding-top: calc(var(--header-height) + 30px);
+    padding-bottom: 30px;
+  }
+  .brand-profile-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .brand-profile-header-left {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .brand-profile-header-right {
+    margin-top: 10px;
+  }
+  .brand-main-name {
+    font-size: 2rem;
+  }
+  .brand-profile-tags {
+    justify-content: center;
+  }
+  .brand-profile-desc {
+    padding-left: 0;
+    border-left: none;
+    text-align: center;
+    font-size: 1.05rem;
+  }
+}
+
+/* --- Lookbook & Swipeable Grid --- */
+.lookbook-section {
+  padding: 80px 0;
+  background-color: var(--bg-secondary);
+}
+
+.lookbook-header {
+  margin-bottom: 40px;
+}
+
+.lookbook-title-wrap {
+  max-width: 650px;
+}
+
+.lookbook-title-wrap h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.lookbook-title-wrap p {
+  color: var(--text-muted);
+}
+
+/* 3x3 Lookbook Grid */
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  padding: 10px 0 40px 0;
+}
+
+@media (min-width: 768px) {
+  .posts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .posts-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3x3 grid layout */
+  }
+}
+
+/* Post Cards inside Grid with native CSS stagger fade-in */
+.post-card {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  
+  /* Stagger fade in */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: postFadeInUp 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+
+@keyframes postFadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.post-card:nth-child(1) { animation-delay: 0.05s; }
+.post-card:nth-child(2) { animation-delay: 0.1s; }
+.post-card:nth-child(3) { animation-delay: 0.15s; }
+.post-card:nth-child(4) { animation-delay: 0.2s; }
+.post-card:nth-child(5) { animation-delay: 0.25s; }
+.post-card:nth-child(6) { animation-delay: 0.3s; }
+.post-card:nth-child(7) { animation-delay: 0.35s; }
+.post-card:nth-child(8) { animation-delay: 0.4s; }
+.post-card:nth-child(9) { animation-delay: 0.45s; }
+
+.post-card:hover {
+  border-color: var(--accent-gold);
+  box-shadow: var(--shadow-medium);
+}
+
+/* Nested Instagram Carousel Container */
+.post-image-wrap {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--bg-secondary);
+}
+
+.post-image-carousel {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  
+  /* Hide standard scrollbars */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.post-image-carousel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+.post-carousel-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.post-carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-smooth);
+}
+
+.post-badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(28, 27, 25, 0.75);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  color: white;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  z-index: 10;
+}
+
+/* Instagram Carousel Nav Arrows */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 15;
+  opacity: 0;
+  transition: var(--transition-fast);
+  font-size: 0.8rem;
+}
+
+.post-card:hover .carousel-arrow {
+  opacity: 1;
+}
+
+.carousel-arrow.prev {
+  left: 12px;
+}
+
+.carousel-arrow.next {
+  right: 12px;
+}
+
+.carousel-arrow:hover {
+  background-color: white;
+  color: var(--accent-gold-dark);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Instagram Carousel Tiny Page Dots */
+.carousel-indicator-dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  z-index: 15;
+  background-color: rgba(28, 27, 25, 0.35);
+  padding: 5px 10px;
+  border-radius: var(--radius-full);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.carousel-indicator-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-full);
+  background-color: rgba(255, 255, 255, 0.45);
+  transition: var(--transition-fast);
+}
+
+.carousel-indicator-dot.active {
+  background-color: white;
+  transform: scale(1.2);
+}
+
+/* Post Content Area */
+.post-details {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.post-description {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.post-inquire-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: var(--text-primary);
+  transition: var(--transition-smooth);
+  gap: 8px;
+}
+
+.post-inquire-btn i {
+  color: #25d366; /* WhatsApp Green */
+  font-size: 1.05rem;
+}
+
+.post-inquire-btn:hover {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  border-color: var(--text-primary);
+}
+
+/* --- Sourcing Callout Section --- */
+.sourcing-callout-section {
+  padding: 60px 0;
+  background-color: var(--bg-primary);
+}
+
+.callout-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--accent-gold);
+  border-radius: var(--radius-md);
+  padding: 40px;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.callout-content h3 {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.callout-content p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  max-width: 700px;
+}
+
+@media (max-width: 768px) {
+  .callout-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+    gap: 24px;
+  }
+}
+
+/* --- Error View Styling --- */
+.brand-error-view {
+  text-align: center;
+  padding: 80px 40px;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+}
+
+.error-icon {
+  font-size: 3.5rem;
+  color: #c5a880;
+  margin-bottom: 24px;
+}
+
+.brand-error-view h2 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.brand-error-view p {
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}

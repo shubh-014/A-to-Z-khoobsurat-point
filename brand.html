@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore exclusive fashion lookbooks and catalogs from our premium partner brands at A to Z a CWB Brand Suits. Direct WhatsApp sourcing and order inquiry.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👑</text></svg>">
+  
+  <title>Brand Catalog Showroom | A to Z a CWB Brand Suits</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="brand.css">
+</head>
+<body>
+
+  <!-- --- Header / Detail View Navigation --- -->
+  <header class="header scrolled">
+    <div class="container">
+      <a href="index.html#brands" class="back-link" id="brand-back-btn">
+        <i class="fas fa-arrow-left"></i>
+        <span>Back</span>
+      </a>
+      
+      <!-- Scrollable list of brand names (Desktop) -->
+      <div class="brand-page-title-scroll" id="brand-header-scroll-nav">
+        <!-- Dynamically populated scroll list of all brands -->
+      </div>
+      
+      <!-- Collapsed Dropdown Selector (Mobile) -->
+      <div class="brand-mobile-select-wrapper" id="brand-mobile-select-wrapper">
+        <button class="brand-mobile-select-btn" id="brand-mobile-select-btn" aria-label="Select Brand">
+          <span id="brand-mobile-select-active">Select Brand</span>
+          <i class="fas fa-chevron-down select-chevron"></i>
+        </button>
+        <div class="brand-mobile-dropdown" id="brand-mobile-dropdown">
+          <!-- Dynamically populated dropdown list of all brands -->
+        </div>
+      </div>
+      
+      <div class="header-cta" style="width: 70px; display: block;">
+        <!-- Left empty on purpose to balance the flex items layout -->
+      </div>
+    </div>
+  </header>
+
+  <!-- --- Brand Intro Section --- -->
+  <section class="brand-intro-section">
+    <div class="container">
+      <!-- Error State View (hidden by default) -->
+      <div id="brand-error" class="brand-error-view" style="display: none;">
+        <i class="fas fa-exclamation-circle error-icon"></i>
+        <h2>Brand Not Found</h2>
+        <p>The brand catalog you requested could not be retrieved. It may have been relocated or updated.</p>
+        <a href="index.html#brands" class="btn btn-primary" style="margin-top: 20px;">Return to Showroom</a>
+      </div>
+
+      <!-- Main Brand Profile (loaded dynamically) -->
+      <div id="brand-profile" class="brand-profile-wrap">
+        <div class="brand-profile-header">
+          <div class="brand-profile-header-left">
+            <div class="brand-large-monogram" id="brand-header-monogram">ZC</div>
+            <div class="brand-meta-wrap">
+              <span class="section-tag" style="margin-bottom: 6px;">Exclusive Partner Catalog</span>
+              <h1 class="brand-main-name" id="brand-profile-name">Zoya Creations</h1>
+              <div class="brand-profile-tags" id="brand-profile-tags">
+                <!-- Dynamically populated tags -->
+              </div>
+            </div>
+          </div>
+          <div class="brand-profile-header-right">
+            <a href="" target="_blank" rel="noopener noreferrer" class="btn btn-secondary whatsapp-join-btn" id="brand-profile-whatsapp">
+              <i class="fab fa-whatsapp" style="font-size: 1.15rem;"></i> Join Updates
+            </a>
+          </div>
+        </div>
+        
+        <div class="brand-profile-body">
+          <p class="brand-profile-desc" id="brand-profile-desc">
+            Premium ethnic suits and intricately embroidered traditional ensembles. Celebrated for rich craftsmanship and luxury fabrics.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Swipeable Lookbook Posts Section --- -->
+  <section class="lookbook-section" id="lookbook-gallery-section">
+    <div class="container">
+      <div class="lookbook-header">
+        <div class="lookbook-title-wrap">
+          <h2>Seasonal Lookbook</h2>
+          <p>Browse our 9 active showroom designs. Swipe horizontally on each post card to view all design variations. Click "Inquire Style" to contact us regarding any piece.</p>
+        </div>
+      </div>
+
+      <!-- 3x3 Lookbook Grid Container -->
+      <div class="posts-grid" id="lookbook-posts-grid">
+        <!-- 9 lookbook posts will render here dynamically with internal swipe carousels -->
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Sourcing Support Callout --- -->
+  <section class="sourcing-callout-section">
+    <div class="container">
+      <div class="callout-card">
+        <div class="callout-content">
+          <h3>Need Bulk Sourcing or Custom Shipments?</h3>
+          <p>We work directly with manufacturers to manage customs, quality checks, and bulk shipping options for international importers and boutique owners.</p>
+        </div>
+        <div class="callout-action">
+          <a href="index.html#contact" class="btn btn-primary">Start Wholesale Inquiry</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Footer --- -->
+  <footer class="footer" style="padding-top: 50px; padding-bottom: 25px;">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0; display: flex; justify-content: space-between; align-items: center;">
+        <p>&copy; 2026 A to Z a CWB Brand Suits. All rights reserved. Curated for the fashion industry.</p>
+        <a href="index.html" class="logo" style="font-size: 1.1rem;">A to Z<span class="logo-accent"> a CWB Brand Suits</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- --- Bottom Navigation Bar (Mobile/Tablet) --- -->
+  <nav class="bottom-nav" aria-label="Mobile Navigation Bar">
+    <a href="index.html#home" class="bottom-nav-item" id="btn-nav-home">
+      <i class="fas fa-home"></i>
+      <span>Home</span>
+    </a>
+    <a href="index.html#brands" class="bottom-nav-item active" id="btn-nav-brands">
+      <i class="fas fa-store"></i>
+      <span>Brands</span>
+    </a>
+    <a href="index.html#why-choose-us" class="bottom-nav-item" id="btn-nav-why">
+      <i class="fas fa-award"></i>
+      <span>Why Us</span>
+    </a>
+    <a href="index.html#contact" class="bottom-nav-item" id="btn-nav-contact">
+      <i class="fab fa-whatsapp"></i>
+      <span>Connect</span>
+    </a>
+  </nav>
+
+  <!-- --- JavaScript Files --- -->
+  <script src="brands.js"></script>
+  <script src="brand.js"></script>
+</body>
+</html>
