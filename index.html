@@ -1,383 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A to Z a Khoobsurat Point is a premium women's fashion showroom and distribution network. Connecting international wholesale buyers, retailers, and boutiques with curated collections. Over 10+ years of trusted fashion sourcing.">
-  <meta name="keywords" content="fashion sourcing, wholesale ethnic wear, women apparel showroom, designer kurtis, salwar suits wholesale, boutique sourcing india, bulk clothing distributor">
-  <meta name="author" content="A to Z a Khoobsurat Point">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="A to Z a Khoobsurat Point | Premium Fashion Sourcing & Showroom">
-  <meta property="og:description" content="Discover curated collections from 10+ leading women's fashion brands. Your trusted sourcing and distribution network with 10+ years of industry experience.">
-  <meta property="og:image" content="hero_fashion.png">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👑</text></svg>">
-  
-  <title>A to Z a Khoobsurat Point | Premium Women's Fashion Showroom & Sourcing Network</title>
-  
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- FontAwesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="index.css">
+    <title>Personal Expense Tracker</title>
 </head>
+
 <body>
 
-  <!-- --- Header / Navigation Bar --- -->
-  <header class="header">
-    <div class="container">
-      <a href="#home" class="logo" id="header-logo-link">
-        A to Z<span class="logo-accent"> a Khoobsurat Point</span>
-      </a>
-      
-      <nav class="nav-menu" aria-label="Main Navigation">
-        <a href="#home" class="nav-link active" id="nav-link-home">Home</a>
-        <a href="#brands" class="nav-link" id="nav-link-brands">Brands</a>
-        <a href="#why-choose-us" class="nav-link" id="nav-link-why">Why Us</a>
-        <a href="#contact" class="nav-link" id="nav-link-contact">Contact</a>
-      </nav>
-      
-      <div class="header-cta">
-        <a href="https://wa.me/918874200694?text=Hello%20A%20to%20Z%20a%20Khoobsurat%20Point,%20I%20would%20like%20to%20make%20a%20sourcing%20inquiry." target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 10px 24px; font-size: 0.8rem;" id="header-cta-btn">Let's Connect</a>
-      </div>
-      
-      <button class="menu-toggle" aria-label="Toggle navigation menu" id="hamburger-menu-btn">
-        <span class="hamburger"></span>
-      </button>
-    </div>
-  </header>
 
-  <!-- --- Hero Section --- -->
-  <section id="home" class="hero">
-    <div class="container">
-      <div class="hero-grid">
-        <div class="hero-content reveal">
-          <div class="hero-tag">
-            <span class="hero-tag-dot"></span>
-            Women's Fashion Showroom
-          </div>
-          <h1 class="hero-title" id="main-hero-title">
-            <span>India's Latest Fashion Collections</span>
-            Curated Daily
-          </h1>
-          <p class="hero-desc" id="main-hero-desc">
-            Explore fresh arrivals from trusted fashion brands, bringing authentic Indian style, premium quality, and direct-from-source value together in one destination.
-          </p>
-          <div class="hero-actions">
-            <a href="#brands" class="btn btn-primary" id="hero-primary-cta">
-              Explore Brands
-              <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
-            </a>
-            <a href="https://linktr.ee/a2zkhoobsuratpoint" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="hero-secondary-cta">
-              Join Our Communities
-            </a>
-          </div>
-          
-          <div class="hero-stats">
-            <div class="stat-item">
-              <span class="stat-number">10+</span>
-              <span class="stat-label">Years Experience</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-number">10+</span>
-              <span class="stat-label">Partner Brands</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-number">Daily</span>
-              <span class="stat-label">Collection Updates</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-number">Global</span>
-              <span class="stat-label">Buyer Friendly</span>
-            </div>
-          </div>
-        </div>
-        
-        <div class="hero-visual reveal reveal-delay-2">
-          <div class="hero-image-wrapper">
-            <img src="hero_fashion.png" alt="Elegant women wearing high fashion collection" width="600" height="700" />
-          </div>
-          <div class="hero-badge">
-            <div class="hero-badge-icon">
-              <i class="fas fa-gem"></i>
-            </div>
-            <div class="hero-badge-text">
-              <h4>Premium Curation</h4>
-              <p>Handpicked boutique-ready collections</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <div class="page">
+        <div id="navbar">
+            <div id="navcontain">
+                <div id="title">
+                    <svg width="200" height="45" viewBox="0 0 200 45" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="logoBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#5145ff" />
+                                <stop offset="100%" stop-color="#1688ee" />
+                            </linearGradient>
+
+                            <linearGradient id="textBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#55d9ff" />
+                                <stop offset="100%" stop-color="#4d7cff" />
+                            </linearGradient>
+                        </defs>
+
+                        <!-- Logo icon -->
+                        <rect x="2" y="40" width="39" height="39" rx="9" fill="url(#logoBlue)" />
+
+                        <!-- Bars -->
+                        <rect x="11" y="25" width="5" height="11" rx="1.5" fill="white" />
+                        <rect x="18" y="20" width="5" height="16" rx="1.5" fill="white" />
+                        <rect x="25" y="15" width="5" height="21" rx="1.5" fill="white" />
+
+                        <!-- Growth line -->
+
+                        <polyline points="10,18 17,13 20,16 31,6" fill="none" stroke="white" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
 
 
-  <!-- --- Partner Brands Section --- -->
-  <section id="brands" class="brands-section section-padding">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Partner Labels</span>
-        <h2 class="section-title">The Master Brand Directory</h2>
-        <p class="section-subtitle">Browse through our exclusive partner manufacturers. Click "Join Brand Updates" to receive real-time collection updates via WhatsApp.</p>
-      </div>
-      
-      <!-- Brands Cards Grid Container -->
-      <div id="brands-container" class="brands-grid">
-        <!-- Brand Cards will be dynamically rendered here by index.js -->
-      </div>
-    </div>
-  </section>
 
-  <!-- --- Why Choose Us Section --- -->
-  <section id="why-choose-us" class="why-section section-padding">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Core Strengths</span>
-        <h2 class="section-title">The Showroom Advantage</h2>
-        <p class="section-subtitle">Why wholesale buyers and boutique owners worldwide choose A to Z a Khoobsurat Point as their sourcing destination.</p>
-      </div>
-      
-      <div class="why-grid">
-        <!-- 10+ Years Experience -->
-        <div class="why-card reveal">
-          <div class="why-card-icon"><i class="fas fa-award"></i></div>
-          <h3 class="why-card-title">10+ Years Experience</h3>
-          <p class="why-card-desc">Decade-long credibility in testing fabric qualities, tracking styles, and managing high-demand seasonal trends.</p>
-        </div>
-        
-        <!-- Trusted Brand Network -->
-        <div class="why-card reveal reveal-delay-1">
-          <div class="why-card-icon"><i class="fas fa-handshake"></i></div>
-          <h3 class="why-card-title">Trusted Brand Network</h3>
-          <p class="why-card-desc">Exclusive partnerships with 10+ top manufacturers, providing certified fabrics and premium tailoring standardizations.</p>
-        </div>
-        
-        <!-- Daily New Arrivals -->
-        <div class="why-card reveal reveal-delay-2">
-          <div class="why-card-icon"><i class="fas fa-calendar-day"></i></div>
-          <h3 class="why-card-title">Daily New Arrivals</h3>
-          <p class="why-card-desc">Stay ahead of retail competitors with fresh designs uploaded daily. Your collection never looks static.</p>
-        </div>
-        
-        <!-- Fast Communication -->
-        <div class="why-card reveal">
-          <div class="why-card-icon"><i class="fas fa-comments"></i></div>
-          <h3 class="why-card-title">Fast Communication</h3>
-          <p class="why-card-desc">Direct client service and instant updates via WhatsApp. Quick query resolution to facilitate speedy supply decisions.</p>
-        </div>
-        
-        <!-- Curated Collections -->
-        <div class="why-card reveal reveal-delay-1">
-          <div class="why-card-icon"><i class="fas fa-filter"></i></div>
-          <h3 class="why-card-title">Curated Collections</h3>
-          <p class="why-card-desc">We filter out substandard items and poor fitments, showcasing only high-margin and highly demanded styles.</p>
-        </div>
-        
-        <!-- International Buyer Friendly -->
-        <div class="why-card reveal reveal-delay-2">
-          <div class="why-card-icon"><i class="fas fa-globe"></i></div>
-          <h3 class="why-card-title">International Buyer Friendly</h3>
-          <p class="why-card-desc">Custom routing systems, clear digital catalogs, and shipping integrations configured for importers and retail chains.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+                        <!-- Arrow -->
+                        <polyline points="26,6 31,6 31,11" fill="none" stroke="white" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
 
-  <!-- --- Testimonials Section --- -->
-  <section class="section-padding">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Client Feedback</span>
-        <h2 class="section-title">Endorsed by Retailers</h2>
-        <p class="section-subtitle">Hear from boutique owners and distribution importers who scale their inventories with our network.</p>
-      </div>
-      
-      <div class="testimonials-grid">
-        <div class="testimonial-card reveal">
-          <p class="testimonial-quote">
-            "Sourcing for my boutique in London was highly challenging due to inconsistencies. Partnering with A to Z transformed our workflow. Their curated WhatsApp updates let me review and select premium collections instantly."
-          </p>
-          <div class="testimonial-author">
-            <div class="author-initials">SR</div>
-            <div class="author-details">
-              <span class="author-name">Sophia R.</span>
-              <span class="author-role">Boutique Owner, London</span>
-            </div>
-          </div>
-        </div>
-        
-        <div class="testimonial-card reveal reveal-delay-1">
-          <p class="testimonial-quote">
-            "We import ethnic wear in bulk, so volume and quality consistency are critical. A to Z a Khoobsurat Point has been our anchor partner. Their connections with leading manufacturers save us months of supplier searching."
-          </p>
-          <div class="testimonial-author">
-            <div class="author-initials">AK</div>
-            <div class="author-details">
-              <span class="author-name">Anil K.</span>
-              <span class="author-role">Wholesale Importer, Dubai</span>
-            </div>
-          </div>
-        </div>
-        
-        <div class="testimonial-card reveal reveal-delay-2">
-          <p class="testimonial-quote">
-            "The daily kurti updates have been a absolute game-changer. My buyers appreciate seeing new stock every week, which keeps customer engagement very high. Sourcing has never been this organized."
-          </p>
-          <div class="testimonial-author">
-            <div class="author-initials">PS</div>
-            <div class="author-details">
-              <span class="author-name">Priya S.</span>
-              <span class="author-role">Retailer, Lucknow</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- --- Contact & Sourcing Inquiry Section --- -->
-  <section id="contact" class="contact-section section-padding">
-    <div class="container">
-      <div class="contact-grid">
-        <div class="contact-info reveal">
-          <div class="contact-business">
-            <span class="section-tag" style="color: var(--accent-gold);">Let's Connect</span>
-            <h3>A to Z a Khoobsurat Point</h3>
-            <p>Your Premier Women's Wear Sourcing Partner</p>
-          </div>
-          
-          <div class="contact-methods">
-            <!-- WhatsApp -->
-            <div class="contact-method-card">
-              <div class="contact-method-icon"><i class="fab fa-whatsapp"></i></div>
-              <div class="contact-method-details">
-                <h4>Whatsapp</h4>
-                <a href="https://wa.me/918874200694?text=Hello%20A%20to%20Z%20a%20Khoobsurat%20Point,%20I%20would%20like%20to%20make%20a%20sourcing%20inquiry." target="_blank" rel="noopener noreferrer">Drop a message</a>
-              </div>
-            </div>
-            
-            <!-- Facebook -->
-            <div class="contact-method-card">
-              <div class="contact-method-icon"><i class="fab fa-facebook-f"></i></div>
-              <div class="contact-method-details">
-                <h4>Facebook Page</h4>
-                <a href="https://www.facebook.com/atozkhoobsuratpoint" target="_blank" rel="noopener noreferrer">@atozkhoobsuratpoint</a>
-              </div>
-            </div>
-            
-            <!-- Phone -->
-            <div class="contact-method-card">
-              <div class="contact-method-icon"><i class="fas fa-phone-alt"></i></div>
-              <div class="contact-method-details">
-                <h4>Direct Calling</h4>
-                <a href="tel:8874200694">8874200694</a>
-              </div>
-            </div>
-            
-            <!-- Linktree Directory -->
-            <div class="contact-method-card">
-              <div class="contact-method-icon"><i class="fas fa-network-wired"></i></div>
-              <div class="contact-method-details">
-                <h4>Master Brand Directory</h4>
-                <a href="https://linktr.ee/a2zkhoobsuratpoint" target="_blank" rel="noopener noreferrer">Checkout the Linktree</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </section>
 
-  <!-- --- Footer --- -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <h3>A to Z a Khoobsurat Point</h3>
-          <p>
-            Establishing trusted women's fashion sourcing pipelines for boutiques, retailers, and wholesalers worldwide. Over 10 years of showroom expertise.
-          </p>
-          <div class="footer-socials">
-            <a href="https://www.facebook.com/atozkhoobsuratpoint" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://tr.ee/wJB99LKBhZ" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Group"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://linktr.ee/a2zkhoobsuratpoint" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Linktree"><i class="fas fa-link"></i></a>
-          </div>
-        </div>
-        
-        <div class="footer-links">
-          <h4>Quick Navigation</h4>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#brands">Partner Brands</a></li>
-            <li><a href="#why-choose-us">Showroom Advantages</a></li>
-            <li><a href="#contact">Contact & Inquiry</a></li>
-          </ul>
-        </div>
-        
-        <div class="footer-contact">
-          <h4>Showroom Contacts</h4>
-          <div class="footer-contact-item">
-            <span class="footer-contact-icon"><i class="fab fa-whatsapp"></i></span>
-            <a href="https://tr.ee/wJB99LKBhZ" target="_blank" rel="noopener noreferrer">WhatsApp Update Group</a>
-          </div>
-          <div class="footer-contact-item">
-            <span class="footer-contact-icon"><i class="fas fa-phone-alt"></i></span>
-            <a href="tel:8874200694">+91 8874200694</a>
-          </div>
-         
-          <div class="footer-contact-item">
-            <span class="footer-contact-icon"><i class="fas fa-network-wired"></i></span>
-            <a href="https://linktr.ee/a2zkhoobsuratpoint" target="_blank" rel="noopener noreferrer">Master Brand Directory</a>
-          </div>
-           <div class="footer-contact-item">
-            <span class="footer-contact-icon"><i class="fas fa-envelope"></i></span>
-            <span>gsavi587@gmail.com</span>
-          </div>
-        </div>
-      </div>
-      
-      <div class="footer-bottom">
-        <p>&copy; 2026 A to Z a Khoobsurat Point. All rights reserved. Curated for the fashion industry.</p>
-        <p style="font-size: 0.8rem; color: var(--text-light);">
-          <i class="fas fa-shield-alt" style="margin-right: 4px;"></i> Sourcing Network Showroom
-        </p>
-      </div>
-    </div>
-  </footer>
+                        <!-- Text -->
+                        <text x="50" y="29" font-family="Arial, sans-serif" font-size="18" font-weight="700"
+                            fill="url(#textBlue)">
+                            Expense Tracker
+                        </text>
+                    </svg>
+                </div>
 
-  <!-- --- Bottom Navigation Bar (Mobile/Tablet) --- -->
-  <nav class="bottom-nav" aria-label="Mobile Navigation Bar">
-    <a href="#home" class="bottom-nav-item active" id="btn-nav-home">
-      <i class="fas fa-home"></i>
-      <span>Home</span>
-    </a>
-    <a href="#brands" class="bottom-nav-item" id="btn-nav-brands">
-      <i class="fas fa-store"></i>
-      <span>Brands</span>
-    </a>
-    <a href="#why-choose-us" class="bottom-nav-item" id="btn-nav-why">
-      <i class="fas fa-award"></i>
-      <span>Why Us</span>
-    </a>
-    <a href="#contact us" class="bottom-nav-item" id="btn-nav-contact">
-      <i class="fab fa-whatsapp"></i>
-      <span>Contact Us</span>
-    </a>
-  </nav>
 
-  <!-- --- JavaScript Files --- -->
-  <!-- Load brands directory data first -->
-  <script src="brands.js"></script>
-  <!-- Load main interactive logic -->
-  <script src="index.js"></script>
+                <!-- NavItems -->
+                <div class="nav-item active n1">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="4" y="4" width="6" height="6" rx="1" />
+                        <rect x="14" y="4" width="6" height="6" rx="1" />
+                        <rect x="4" y="14" width="6" height="6" rx="1" />
+                        <rect x="14" y="14" width="6" height="6" rx="1" />
+                    </svg>
+                    <span>Dashboard</span>
+                </div>
+
+                <div class="nav-item">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="4" y="4" width="16" height="17" rx="2" />
+                        <path d="M8 8h8" />
+                        <path d="M8 12h8" />
+                        <path d="M8 16h5" />
+                    </svg>
+                    <span>Transactions</span>
+                </div>
+                <div class="nav-item">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M3 6h7l2 2h9v11H3z" />
+                        <path d="M3 6v-1h7l2 2" />
+                    </svg>
+                    <span>Categories</span>
+                </div>
+                <div class="Navfooter">
+                    <div id="Username"></div>
+                    <div id="sign">Designed by Shubh</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- ------------- -->
+
+        <div id="content">
+            <div id="Header">
+                <div id="Headings">
+                    <h1> Financial Dashboard</h1>
+                    <h2> Manage Your Finances</h2>
+                </div>
+                <button id="Signout">Sign out</button>
+            </div>
+            <div id="container">
+
+                <div id="container1" class="container">
+                    <div class="logobox">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                            <path d="M4 16L9 11L13 14L20 7" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+
+                            <path d="M15 7H20V12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+
+                        </svg>
+                    </div>
+                    <div class="desc"> Total balance </div>
+                    <div id="total-balance" class="amt"></div>
+                </div>
+
+                <div id="container2" class="container">
+                    <div class="logobox">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                            <path d="M4 8L9 13L13 10L20 17" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+
+                            <path d="M15 17H20V12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+
+                        </svg>
+                    </div>
+                    <div class="desc"> Total expenses</div>
+                    <div id="total-expenses" class="amt"></div>
+                </div>
+
+
+                <div id="container3" class="container">
+                    <div class="logobox">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                            <path d="M12 3V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+
+                            <path
+                                d="M16 7.5C15.3 6.5 14.2 6 12.5 6C10.5 6 9 7.1 9 8.7C9 10.5 10.5 11.2 12.5 11.8L14 12.2C15.7 12.7 17 13.5 17 15.2C17 17 15.3 18 12.8 18C10.7 18 9.1 17.3 8 16"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+
+                        </svg>
+                    </div>
+                    <div class="desc"> Total income</div>
+                    <div id="total-income" class="amt"></div>
+                </div>
+
+                <div id="container4" class="container">
+                    <div class="logobox">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                            <path
+                                d="M4 6.5C4 5.67 4.67 5 5.5 5H18C19.1 5 20 5.9 20 7V18C20 19.1 19.1 20 18 20H6C4.9 20 4 19.1 4 18V6.5Z"
+                                stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+
+                            <path d="M4 8H18" stroke="currentColor" stroke-width="1.8" />
+
+                            <path d="M15 13H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+
+                            <circle cx="15" cy="13" r="1" fill="currentColor" />
+
+                        </svg>
+                    </div>
+                    <div class="desc"> Total savings</div>
+                    <div id="total-savings" class="amt"></div>
+                </div>
+
+            </div>
+            <div id="dashboard-bottom">
+
+                <div id="transaction-form">
+
+                    <div class="transaction-title">
+                        <div class="plus-icon">+</div>
+                        <span>Add Transaction</span>
+                    </div>
+
+                    <div class="input-box i1">
+                        <!-- your description SVG -->
+                        <input type="text" id="description" placeholder="Description">
+                    </div>
+
+                    <div class="input-box">
+                        <!-- your amount SVG -->
+                        <input type="number" id="amount" placeholder="Amount">
+                    </div>
+
+                    <div class="input-box">
+                        <!-- your type SVG -->
+                        <select id="transaction-type">
+                            <option value="">select</option>
+                            <option value="Income">Income</option>
+                            <option value="Expense">Expense</option>
+                            <option value="Saving">Saving</option>
+                        </select>
+
+                        <span class="select-arrow">⌄</span>
+                    </div>
+                    <button id="add-transaction">Add Transaction</button>
+                    <button id="reset">Reset Past Records</button>
+                </div>
+                <div id="chart-container">
+                    <h3>Spending Overview</h3>
+                    <div id="chart-area">
+
+                        <div id="doughnut">
+
+                            <canvas id="chart"></canvas>
+
+                            <div id="chart-center">
+
+                                <div>Balance</div>
+
+                                <strong>Rs 0.00</strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link rel="stylesheet" href="Expense.css">
+        <script src="nav.js"></script>
+        <script src="Expense.js"></script>
 </body>
+
 </html>
