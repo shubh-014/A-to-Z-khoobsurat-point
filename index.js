@@ -1,5 +1,5 @@
 /* ----------------------------------------------------
-   A to Z @ CWB Brand Suits - Interactive Logic
+   A to Z @ Khoobsurat Point - Interactive Logic
 ------------------------------------------------------- */
 
 document.addEventListener("DOMContentLoaded", () => {

@@ -1,5 +1,5 @@
 /* ----------------------------------------------------
-   A to Z @ CWB Brand Suits - Brand Detail Logic
+   A to Z @ Khoobsurat Point - Brand Detail Logic
 ------------------------------------------------------- */
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -30,7 +30,7 @@ function initBrandPage() {
   }
 
   // Brand found! Populate UI elements
-  document.title = `${brand.name} Catalog Lookbook | A to Z a CWB Brand Suits`;
+  document.title = `${brand.name} Catalog Lookbook | A to Z a Khoobsurat Point`;
   
   // 1. Render scrollable brand list in Header (Desktop)
   const scrollNav = document.getElementById("brand-header-scroll-nav");
