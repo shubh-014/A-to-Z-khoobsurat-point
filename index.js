@@ -119,7 +119,7 @@ function renderBrands(brands) {
       .map(
         imgUrl => `
         <div class="brand-gallery-img">
-          <img src="${imgUrl}" alt="${brand.name} Collection Preview" loading="lazy" />
+          <img src="${imgUrl}" alt="${brand.name} Collection Preview" loading="lazy" decoding="async" />
         </div>
       `
       )

@@ -131,15 +131,19 @@ function renderLookbook(posts) {
     const card = document.createElement("div");
     card.className = "post-card";
 
-    // Construct carousel slides HTML
+    // Construct carousel slides HTML with priority loading for top active slides
     const slidesHtml = post.images
-      .map(
-        (imgUrl, idx) => `
+      .map((imgUrl, idx) => {
+        const isInitialSlide = idx === 0;
+        const isAboveTheFold = index < 3;
+        const loadingAttr = isInitialSlide && isAboveTheFold ? 'loading="eager"' : 'loading="lazy"';
+        const priorityAttr = isInitialSlide && isAboveTheFold ? 'fetchpriority="high"' : '';
+        return `
         <div class="post-carousel-slide">
-          <img src="${imgUrl}" alt="Style design ${post.number} slide ${idx + 1}" loading="lazy" />
+          <img src="${imgUrl}" alt="Style design ${post.number} slide ${idx + 1}" ${loadingAttr} ${priorityAttr} decoding="async" />
         </div>
-      `
-      )
+      `;
+      })
       .join("");
 
     // Construct tiny indicator dots HTML
